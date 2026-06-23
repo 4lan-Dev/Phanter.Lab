@@ -57,4 +57,9 @@ O site foi projetado para funcionar perfeitamente em:
 Apresentar os serviços da Panther Lab 3D de forma profissional, valorizando a qualidade dos produtos e facilitando a comunicação com potenciais clientes.
 
 
+👨‍💻 Autor
+
+Alan Bonfim
+
+Desenvolvedor Full Stack em formação.
 
