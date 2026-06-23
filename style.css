@@ -1,0 +1,321 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+html,
+body{
+width:100%;
+overflow-x:hidden;
+font-family:'Montserrat',sans-serif;
+background:#0B0B0B;
+color:#fff;
+}
+
+/* HEADER */
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,.95);
+backdrop-filter:blur(10px);
+padding:15px 20px;
+z-index:999;
+}
+
+.logo{
+text-align:center;
+}
+
+.logo h1{
+font-size:30px;
+font-weight:800;
+}
+
+.logo span{
+display:block;
+color:#C9A35F;
+letter-spacing:8px;
+font-size:14px;
+font-weight:600;
+}
+
+/* MENU */
+
+.menu-toggle{
+position:absolute;
+right:20px;
+top:20px;
+font-size:30px;
+cursor:pointer;
+color:#C9A35F;
+}
+
+.menu{
+display:none;
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+text-align:center;
+}
+
+.menu.active{
+display:flex;
+}
+
+.menu a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#C9A35F;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:140px 20px 50px;
+}
+
+.hero-content{
+max-width:600px;
+}
+
+.hero-logo{
+width:180px;
+max-width:100%;
+margin-bottom:25px;
+}
+
+.hero h2{
+font-size:2.3rem;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1rem;
+line-height:1.6;
+color:#ccc;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#C9A35F;
+color:#000;
+font-weight:700;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* TITULOS */
+
+.titulo{
+text-align:center;
+margin-bottom:40px;
+font-size:2rem;
+}
+
+/* PRODUTOS */
+
+.produtos{
+padding:80px 20px;
+}
+
+.grid-produtos{
+display:grid;
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.card{
+background:#161616;
+border-radius:15px;
+overflow:hidden;
+transition:.4s;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#C9A35F;
+}
+
+.card img{
+width:100%;
+height: 380px;
+object-fit:cover;
+display:block;
+}
+
+.card h3{
+padding:15px;
+}
+
+.card p{
+padding:0 15px 20px;
+color:#ccc;
+}
+
+/* SOBRE */
+
+.sobre{
+padding:80px 20px;
+text-align:center;
+}
+
+.sobre h2{
+margin-bottom:20px;
+}
+
+.sobre p{
+max-width:800px;
+margin:auto;
+line-height:1.8;
+color:#ccc;
+}
+
+/* CONTATO */
+
+.contato{
+padding:80px 20px;
+text-align:center;
+}
+
+.contato h2{
+margin-bottom:20px;
+}
+
+.contato p{
+margin-bottom:30px;
+color:#ccc;
+}
+
+/* POPUP */
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.85);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+padding:20px;
+}
+
+.modal-box{
+position:relative;
+width:100%;
+max-width:500px;
+}
+
+.modal-box img{
+width:100%;
+display:block;
+border-radius:15px;
+}
+
+.close-btn{
+position:absolute;
+top:-10px;
+right:-10px;
+width:40px;
+height:40px;
+border:none;
+border-radius:50%;
+background:#C9A35F;
+color:#000;
+font-size:18px;
+cursor:pointer;
+font-weight:700;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+text-decoration:none;
+z-index:998;
+}
+
+.img-whats {
+width: 70px;
+height: 70px;
+position: absolute;
+
+}
+
+
+
+/* DESKTOP */
+
+@media(min-width:768px){
+
+.menu-toggle{
+display:none;
+}
+
+.menu{
+display:flex !important;
+flex-direction:row;
+justify-content:center;
+gap:30px;
+margin-top:20px;
+}
+
+.hero h2{
+font-size:4rem;
+}
+
+.hero-logo{
+width:250px;
+}
+
+.grid-produtos{
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+}
+
+.produtos,
+.sobre,
+.contato{
+padding:120px 8%;
+}
+
+}
